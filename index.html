@@ -1,72 +1,60 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
 <title>Text to Hand</title>
 <link rel="icon" href="images/icon.png"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.slidecontainer {
-    width: 100%;
-}
-
-textarea{
-    width: 100%;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-.slider:hover {
-    opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #000000;
-    cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #000000;
-    cursor: pointer;
-}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 <body>
 
-<h1 style="text-align: center;">Text to Hand</h1>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Text To Hand</span>
+</nav>
 
-<div class="""slidecontainer">
-  <input type="range" min="1" max="7" value="3" class="slider" id="myRange">
-  <p>Words per read: <span id="output"></span></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+    <label for="wordsPerRead">Words per Read</label>
+    <select class="form-control" id="wordsPerRead">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+    <label for="secondDelay">Second Delay</label>
+    <select class="form-control" id="secondDelay">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col">
+  <div class="form-group">
+    <!-- <label for="textInput">text input</label> -->
+    <textarea class="form-control" id="textInput" rows="5"></textarea>
+  </div>
+  </div>
+  </div>
+  <button type="button" class="btn btn-primary" onclick="PlayPause()" id="playButton">Play</button>
 </div>
 
-<div class="""slidecontainer">
-  <input type="range" min="1" max="10" value="5" class="slider" id="mySeconds">
-  <p>Delay in Seconds: <span id="outputseconds"></span></p>
-</div>
-
-<textarea id="input" rows="6" placeholder="Enter text here"></textarea>
-<div style="text-align: center; padding:2em;">
-<button id="button" type="button" onclick="PlayPause()">Play</button>
-</div>
 <script type="text/javascript" src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 </body>
 </html>
