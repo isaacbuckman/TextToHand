@@ -1,7 +1,7 @@
 var wordsPerRead = document.getElementById("wordsPerRead");
 var secondDelay = document.getElementById("secondDelay");
 var textInput = document.getElementById("textInput");
-textInput.value = "Thank you for listening to my presentation."
+textInput.value = "Thank you for listening and please vote for me."
 // textInput.value = "In 1940, Stern began performing with Russian-born pianist Alexander Zakin, collaborating until 1977.[7] Within musical circles, Stern became renowned both for his recordings and for championing certain younger players. Among his discoveries were cellists Yo-Yo Ma and Jian Wang, and violinists Itzhak Perlman and Pinchas Zukerman. ";
 var playButton = document.getElementById("playButton");
 
