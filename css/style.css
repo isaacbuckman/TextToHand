@@ -1,0 +1,43 @@
+body {
+  position: relative;
+  width: 100%;
+  background: url("../images/bg-pattern.png");
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+#bg-top {
+    height: 60px;
+    width: 100%;
+    background: url("../images/bg-pattern-top.png") repeat-x;    
+/*     background-size: auto 100%;    
+    position: relative;
+	display: inline-block; */
+}
+
+#bg-top > img {
+	margin-left: 20px;
+}
+
+.centered {
+  background: #dcdbdb;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* .btn-primary {
+    color: #fff;
+    background-color: #2b22fe;
+    border-color: #4847fc;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1e17b1;
+    border-color: #4847fc;
+} */
